@@ -1,0 +1,26 @@
+{
+  "Console log": {
+    "prefix": "clog",
+    "body": "console.log('$1');",
+    "description": "Log output to console"
+  },
+
+  "React Functional Component": {
+    "prefix": "RFC",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types'",
+      "",
+      "const componentName = (props) => {",
+      "  return (<div></div>)",
+      "}",
+      "",
+      "componentName.propTypes = {};",
+      "",
+      "componentName.defaultProps = {};",
+      "",
+      "export default componentName;"
+    ],
+    "description": "React Functional Component"
+  }
+}
