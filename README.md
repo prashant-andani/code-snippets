@@ -41,3 +41,45 @@ export default componentName;
     "description": "React Functional Component"
   }
 ```
+
+
+#### Jest Snapshot Test Component
+
+```javascript
+import React from 'react';
+import { shallow } from 'enzyme';
+
+describe('Component Test', () => {
+  it('renders without crashing', () => {
+    shallow(<COMPONENT />);
+  });
+  it('renders with snapshot correctly', () => {
+    const wrapper = shallow(<COMPONENT />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});
+```
+
+### Code Snippet - React Snapshot test component
+
+```
+"React Snapshot Test Component": {
+    "prefix": "RSTC",
+    "body": [
+      "import React from 'react';",
+      "import { shallow } from 'enzyme';",
+      "",
+      "describe('Component Test', () => {",
+      "  it('renders without crashing', () => {",
+      "    shallow(<COMPONENT />);",
+      "  });",
+      "  it('renders with snapshot correctly', () => {",
+      "    const wrapper = shallow(<COMPONENT />);",
+      "    expect(wrapper).toMatchSnapshot();",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "React Snapshot test component"
+  }
+```
